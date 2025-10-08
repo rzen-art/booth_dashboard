@@ -17,7 +17,8 @@ if submit:
         st.success(f"Welcome {username}! Redirecting...")
 
         # ✅ Correct navigation to main file (one level up)
-        st.switch_page("Home")
+        st.switch_page("../Home.py")
+
 
     else:
         st.error("❌ Invalid username or password.")
