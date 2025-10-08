@@ -10,8 +10,9 @@ st.title("🗳️ Tamil Nadu Booth Dashboard")
 # 🚨 Access Control
 if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.warning("Please login to continue.")
-    st.page_link("1_Login", label="🔐 Go to Login Page")
+    st.switch_page("1_Login")
     st.stop()
+
 
 # ---------------------------------------------------------------
 # District–Constituency Mapping
