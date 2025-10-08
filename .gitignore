@@ -1,0 +1,33 @@
+# --- Environment & cache files ---
+venv/
+__pycache__/
+*.log
+*.tmp
+*.bak
+*.pyc
+
+# --- Sensitive or large data ---
+data/private/
+data/*/*.csv
+data/*/*.xlsx
+data/*/*.json
+
+# Allow sample data only
+!data/sample/
+!data/sample/*.csv
+
+# --- Credentials & keys ---
+*.key
+*.pem
+*.p12
+passwords.json
+secrets.json
+
+# --- System / IDE files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Other ---
+.env

@@ -15,6 +15,9 @@ if submit:
         st.session_state["logged_in"] = True
         st.session_state["user"] = username
         st.success(f"Welcome {username}! Redirecting...")
-        st.switch_page("Home.py")  # ✅ works now (root file)
+
+        # ✅ Correct navigation to main file (one level up)
+        st.switch_page("Home.py")
+
     else:
         st.error("❌ Invalid username or password.")
