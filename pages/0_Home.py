@@ -1,6 +1,18 @@
 import streamlit as st
 import pandas as pd
 
+
+import os
+
+st.write("📂 Current directory:", os.getcwd())
+
+pages_path = os.path.join(os.getcwd(), "pages")
+if os.path.exists(pages_path):
+    st.write("📄 Files Streamlit sees in /pages:", os.listdir(pages_path))
+else:
+    st.write("❌ pages folder not found")
+
+
 # ---------------------------------------------------------------
 # Page Setup
 # ---------------------------------------------------------------
