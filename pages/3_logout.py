@@ -13,4 +13,4 @@ st.success("✅ You have been logged out successfully!")
 st.info("Redirecting to Login page...")
 
 time.sleep(1.5)
-st.switch_page("pages/1_Login.py")  # redirect to login page
+st.switch_page("1_Login.py")  # redirect to login page
