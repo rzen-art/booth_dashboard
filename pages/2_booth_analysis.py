@@ -433,11 +433,11 @@ else:
 
 if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.warning("Please login to continue.")
-    st.switch_page("1_Login.py")
+    st.switch_page("1_Login")
 # Sidebar logout button
 with st.sidebar:
     st.markdown("---")
     if st.button("Logout"):
-        st.switch_page("3_Logout.py")
+        st.switch_page("3_Logout")
 
 

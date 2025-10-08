@@ -9,4 +9,4 @@ def logout_button():
                 if key in st.session_state:
                     del st.session_state[key]
             st.success("✅ Logged out successfully!")
-            st.switch_page("1_Login.py")
+            st.switch_page("1_Login")
