@@ -10,7 +10,8 @@ st.title("🗳️ Tamil Nadu Booth Dashboard")
 # 🚨 Access Control
 if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.warning("Please login to continue.")
-    st.switch_page("1_Login")
+    st.write("If not redirected automatically, click below 👇")
+    st.link_button("🔐 Go to Login Page", "/1_Login")
     st.stop()
 
 
