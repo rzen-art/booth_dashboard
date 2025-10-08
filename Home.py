@@ -10,7 +10,7 @@ st.title("🗳️ Tamil Nadu Booth Dashboard")
 # 🚨 Access Control
 if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.warning("Please login to continue.")
-    st.page_link("pages/1_Login.py", label="🔐 Go to Login Page")
+    st.page_link("1_Login.py", label="🔐 Go to Login Page")
     st.stop()
 
 # ---------------------------------------------------------------
@@ -40,12 +40,12 @@ if constituency:
         st.session_state["district"] = district
         st.session_state["constituency"] = constituency
         st.session_state["district_data"] = district_data.to_dict()
-        st.switch_page("pages/2_Booth_Analysis.py")
+        st.switch_page("2_Booth_Analysis.py")
 
 # ---------------------------------------------------------------
 # Sidebar Logout
 # ---------------------------------------------------------------
 with st.sidebar:
     st.markdown("---")
-    if st.button("🚪 Logout"):
-        st.switch_page("pages/3_Logout.py")
+    if st.button("Logout"):
+        st.switch_page("3_Logout.py")
